@@ -8,3 +8,5 @@ class CreateUsers < ActiveRecord::Migration[5.2]
     end
   end
 end
+
+# On a créé la table des users et ses attributs via la console rails
