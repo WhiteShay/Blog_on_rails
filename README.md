@@ -1,27 +1,21 @@
-# README
+# README POUR LE BLOG
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Deux gems supplémentaires ont été installé : gem table_print et la gem faker
 
-Things you may want to cover:
+## Projet de Nora Bourouis et Hamdi Nassri
 
-* Ruby version
+Cette base de données a été créé pour super blog où les utilisateurs pourront s'enregistrer, créer des articles, les commenter (sans pouvoir commenter les commentaires), attribuer une catégorie à chaque article et même les liker. 
 
-* System dependencies
+Pour se faire, on a crée une base de donnée avec 5 modèles : celui d'un utilisateur (User), celui d'un article (Article), celui d'une catégorie (Category), celui d'un commentaire (Comment) et celui d'un like (Like). 
 
-* Configuration
+### Description des models
 
-* Database creation
 
-* Database initialization
+### Autres infos
 
-* How to run the test suite
+Dans un fichier seeds.rb, on a généré automatiquement des éléments pour chaques models grâce à la gem faker. Pour réaliser l'action de ce fichier il suffit de taper 'rails db:seed ' dans la console.
 
-* Services (job queues, cache servers, search engines, etc.)
+Pour lire la database, tapez un "rails console" dans le terminal, puis checker les tables avec un 'tp NomDuModel.all'. 
 
-* Deployment instructions
+Enjoy ;) 
 
-* ...
-
-Pour associer les 10 articles à une des catégories, on a fait la requete suivante :
-a = Article.find(3).update(category_id:2)
